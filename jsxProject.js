@@ -43,7 +43,7 @@ const animalFacts = (
   <div className='animals'>
   {images}
   </div>
-  </div>
+  
 )
 
 ReactDOM.render(animalFacts, document.getElementById('root'));
