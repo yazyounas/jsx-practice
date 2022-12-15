@@ -42,4 +42,10 @@ loop do
   print "#{i}"
   break if i <= 0
 end
-
+# Print string multiple times
+i = 0
+loop do
+  print "Ruby!"
+  i += 1
+  break if i == 30
+end
