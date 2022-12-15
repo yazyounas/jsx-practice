@@ -15,6 +15,12 @@ while counter < 11
   puts counter
   counter += 1
 end
+# until
+i = 1
+until i > 50 do
+ print i
+  i += 1
+end
 
 # for loop three ... stop loops before the higest number and two .. run loop to the highest number
 for num in 1..15
