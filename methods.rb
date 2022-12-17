@@ -68,3 +68,49 @@ books = ["Charlie and the Chocolate Factory", "War and Peace", "Utopia", "A Brie
 books.sort!
 
 puts books
+# The Combined Comparison Operator
+book_1 = "A Wrinkle in Time"
+
+book_2 = "A Brief History of Time"
+
+output = book_1 <=> book_2
+puts output
+
+# SORTING ARRAY IN ACEENDING AND DECCENDING
+
+books = ["Charlie and the Chocolate Factory", "War and Peace", "Utopia", "A Brief History of Time", "A Wrinkle in Time"]
+
+# To sort our books in ascending order, in-place
+books.sort! { |firstBook, secondBook| firstBook <=> secondBook }
+
+
+# Sort your books in descending order, in-place below
+
+books.sort! { |firstBook, secondBook| secondBook <=> firstBook }
+puts books
+
+# each multiply by itself
+
+=begin
+  def alphabetize(arr, rev = false)
+  arr.sort!
+  if rev == true
+    arr.reverse!
+  else
+  	arr
+  end
+end
+
+numbers = [3, 5, 1, 6]
+
+puts alphabetize(numbers)
+-end
+matz = { "First name" => "Yukihiro",
+  "Last name" => "Matsumoto",
+  "Age" => 47,
+  "Nationality" => "Japanese",
+  "Nickname" => "Matz"
+}
+matz.each do |key, value|
+puts matz[key]
+end
