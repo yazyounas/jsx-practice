@@ -35,7 +35,14 @@ when "display"
   end
 
 when "delete"
-  puts "Deleted!"
+puts "what is the title"
+ title = gets.chomp
+ if movies[title.intern].nil?
+   puts "movie does not exist"
+ else 
+  movies.delete(title.to_sym)
+ end
 else
   puts "Error!"
 end
+
